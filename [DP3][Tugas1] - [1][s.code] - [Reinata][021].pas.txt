@@ -1,0 +1,42 @@
+program labdaspro1;
+
+uses crt;
+var
+        x,y,z:integer;
+begin
+clrscr;
+
+        write('Masukkan Bilangan 1: '); readln(x);
+        write('Masukkan Bilangan 2: '); readln(y);
+        write('Masukkan Bilangan 3: '); readln(z);
+
+        if (x<y) AND (y<z) then
+        begin
+        write ('urutan:' ,x,' ',y,' ',z);
+        end
+        else if (y<z) AND (z<x) then
+        begin
+        write ('Urutan:' ,y,' ',z,' ',x);
+        end
+        else if (z<x) AND (x<y) then
+        begin
+        write ('urutan:' ,z,' ',x,' ',y);
+        end
+        else if (x<z) AND (z<y) then
+        begin
+        write ('Urutan:' ,x,' ',z,' ',y);
+        end
+        else if (y<x) AND (x<z) then
+        begin
+        write ('Urutan:' ,y,' ',x,' ',z);
+        end
+        else if (z<y) AND (y<x) then
+        begin
+        write ('Urutan:' ,z,' ',y,' ',x)
+        end
+        else
+        begin
+        write( 'Terdapat bilangan yang sama. Masukkan Bilangan yang berbeda.');
+        end;
+        readln();
+end.

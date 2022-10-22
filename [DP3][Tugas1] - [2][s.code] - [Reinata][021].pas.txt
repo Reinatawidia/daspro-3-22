@@ -1,0 +1,32 @@
+program labdaspro2;
+
+uses crt;
+
+var
+    code:integer;
+begin
+clrscr;
+        writeln('MENU MAKANAN                   KODE ');
+        writeln('Kebab Daging                   301');
+        writeln('Kebab Mozarella                302');
+        writeln('Kebab Mix(Daging & Mozarella)  304');
+        writeln('Burger Original                307');
+        writeln('Burger Original+Telur          308');
+        writeln('Burger Original+Sosis          401');
+        writeln('Sosis Bakar                    402');
+
+        write('Masukkan KODE makanan pilihan Anda: ');readln(code);
+
+        case (code) of
+                301: writeln('Kebab Daging                      Rp 10.000');
+                302: writeln('Kebab Mozarella                   Rp 15.000');
+                304: writeln('Kebab Mix(Daging&Mozarella)       Rp 23.000');
+                307: writeln('Burger Original                   Rp  8.000');
+                308: writeln('Burger Original+Telur             Rp 10.000');
+                401: writeln('Burger Original+Sosis             Rp 12.000');
+                402: writeln('Sosis Bakar                       Rp  5.000');
+         else
+         writeln('Kode tidak ditemukan');
+        end;
+       readln();
+end.

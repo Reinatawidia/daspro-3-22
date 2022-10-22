@@ -1,0 +1,21 @@
+program labdaspro3;
+
+uses crt;
+
+var
+        p:string;
+
+begin
+clrscr;
+        write('Masukkan huruf: ');readln(p);
+
+        case p of
+         'a','A','i','I','u','U','e','E','o','O': writeln(p,' merupakan huruf vokal.');
+
+        else
+                begin
+                writeln(p,' merupakan huruf konsonan.');
+                 end;
+        end;
+readln();
+end.
